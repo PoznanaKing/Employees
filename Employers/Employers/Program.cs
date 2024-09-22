@@ -91,6 +91,17 @@ namespace Employers
                     Console.WriteLine($"Név: {item.Name} | Kor: {item.Age}");
                 }
             }
+            //6. feladat: Hányan keresnek 50000 Ft-ot/hónap
+            int counter = 0;
+            foreach (var item in employees)
+            {
+                if (item.Earnings>50000)
+                {
+                    counter++;
+                }
+            }
+            Console.WriteLine($"Ennyien keresnek 50000Ft felett / hónap: {counter}");
+
 
             Console.ReadKey();
         }
