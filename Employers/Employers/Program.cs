@@ -81,7 +81,16 @@ namespace Employers
                     Console.WriteLine($"\nAzonosító: {item.Id}\nNév: {item.Name}");
                 }
             }
+            //5. feladat: 10 évük van még nyugdíjig
+            Console.WriteLine("\n10 év múlva nyugdíjasok:\n");
 
+            foreach (var item in employees)
+            {
+                if (item.Age==55)
+                {
+                    Console.WriteLine($"Név: {item.Name} | Kor: {item.Age}");
+                }
+            }
 
             Console.ReadKey();
         }
